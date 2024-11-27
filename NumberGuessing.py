@@ -42,22 +42,22 @@ def reset_game():
     label_feedback.config(text="You have 7 chances to guess the number.")
 
 # Create and place widgets
-label_title = tk.Label(root, text="Welcome to the Number Guessing Game!", font=("Arial", 14))
+label_title = tk.Label(root, text="Welcome to the Number Guessing Game!", font=("Arial", 14), bg="yellow")
 label_title.pack(pady=10)
 
-label_instruction = tk.Label(root, text="Guess a number between 1 and 100:")
+label_instruction = tk.Label(root, text="Guess a number between 1 and 100:", bg="orange")
 label_instruction.pack()
 
 entry_guess = tk.Entry(root, font=("Arial", 12), width=10)
 entry_guess.pack(pady=5)
 
-button_guess = tk.Button(root, text="Guess", command=check_guess)
+button_guess = tk.Button(root, text="Guess", command=check_guess, bg="light green")
 button_guess.pack(pady=10)
 
-label_feedback = tk.Label(root, text="You have 7 chances to guess the number.", font=("Arial", 12))
+label_feedback = tk.Label(root, text="You have 7 chances to guess the number.", font=("Arial", 12), bg="light grey")
 label_feedback.pack(pady=10)
 
-button_reset = tk.Button(root, text="Reset Game", command=reset_game)
+button_reset = tk.Button(root, text="Reset Game", command=reset_game, bg="Red")
 button_reset.pack(pady=10)
 
 # Run the application
